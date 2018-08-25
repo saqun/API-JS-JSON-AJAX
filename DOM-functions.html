@@ -1,0 +1,81 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grid, JavaScript and API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+		body {
+		    /* font-family: "Gill Sans MT", "Gill Sans", "My Gill Sans", sans-serif; */
+            /*font-weight: 700; */
+
+		}
+        .content {
+            display: grid;
+            grid-template-columns: 50% 48%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+        .content > div {
+            background-color: grey;
+            padding: 1em;
+        }
+
+		/*
+        .content > div:nth-child(odd) {
+            background-color: white;
+        } */
+        table {
+            width: 80%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="dom" id="dom"> 
+		   <a href="DOM1.jpg"> 
+			<img src="DOM1_small.jpg" alt="DOM">
+			</a>
+			
+			<h1> DOM </h1>
+			<ul>
+			    <li> document.head;</li>
+			    <li> document.body;</li>
+                <li> document.body.childNodes;</li>
+                <li> if (document.body.nodeType === document.ELEMENT_NODE) </li>
+                <li> var classes = document.getElementById("antiques").classList  </li>
+                <li> getElementById("antiques").classList.contains("merveille")) 
+                </li>
+                </ul> 
+
+                    <table> 
+                        <tr> <td> document.getElementsByTagName("h1") </td><td>setAttribute("id", "titre")</td></tr>
+                        <tr> <td> getElementsClassName("h1")</td><td>querySelector("h1").id = "titre";</td></tr>
+                        <tr> <td> getElementById("h1")</td><td>python = document.createElement("li")</td></tr>
+                        <tr> <td> querySelectorAll("h1")</td><td>python.id="phyton"</td></tr>
+                        <tr> <td> querySelectorAll("#contenu p")</td><td>python.textContent = "pyhton"</td></tr>
+                        <tr> <td> querySelectorAll(".exist")</td><td>document.getElementById("langages").appendChild(pythonElt)</td></tr>
+                        <tr> <td> querySelector("p")</td><td>createTextNode</td></tr>
+                        <tr> <td> getAttribute("href")</td><td>pElt.style.fontFamily="Arial"</td></tr>
+                        <tr> <td> hasAttribute("href")</td><td>pElt.style.backgroundColor="black"</td></tr>
+                        <tr> <td> innerHTML</td><td>pElt.style.color="black"</td></tr>
+                        <tr> <td> document.body.childNodes[0].childNodes[1];</td><td>pElt.fontStyle</td></tr>
+                        <tr> <td> document.getElementById("cible") </td><td> document.querySelector("#cible")</td></tr>
+                    </table>
+
+			
+        </div>
+        <div api="api" id="api">
+            <h1>API usage</h1>
+            <h6> AJAX (Asynchronous JavaScript And XML).</h6>
+            <h6> JSON (JavaScript Object Notation).</h6>
+        </div>
+    </div>
+
+</body>
+</html>

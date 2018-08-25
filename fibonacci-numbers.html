@@ -1,0 +1,75 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grid, JavaScript and API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+
+        .content {
+            display: grid;
+            grid-template-columns: 50% 48%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+        .content > div {
+            background-color: grey;
+            padding: 1em;
+        }
+        .content > div:nth-child(odd) {
+            background-color: white;
+        }
+        #tab_fibo_result {
+            font-family: "Gill Sans MT", "Gill Sans", "My Gill Sans", sans-serif;
+            font-weight: 700;
+            width: 80%;
+            border-style: solid;
+            border-width: 2px 10px 4px 20px;
+        }
+        #tab_fibo_result tr { 
+            background: rgb(36, 172, 126); 
+        }
+        #tab_fibo_result tr:nth-child(event) {background: #FFF}
+        #tab_fibo_result td {
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="fibonacci" id="fibonacci"> 
+            <h1>Fibonacci numbers</h1>
+            <div class="fibovideo">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/Ei12jkhTNsc" 
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+    
+                </div>    
+
+            <div class="fibotxt">
+            <p>Fibonacci numbers are the numbers in the following integer sequence,
+                 called the Fibonacci sequence, and characterized by the fact that
+                  every number after the first two is the sum of the two preceding ones:
+            </p>
+                    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, ... <br>
+            <p><strong >Formula f(n) = f(n-1) + f(n-2) </Strong> </p>
+            </div>
+ 
+            <form>
+                Enter n: <input type="text" id="fld_n">
+                <input type="button" id="btncompute" value="Compute" onclick="doCompute();" />
+            </form>
+        </div>
+        <div class="api" id="api">
+             <div id="fibo_result">
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AJAX and JSON API</title>
+	<style type="text/css">
+		body {
+			max-width: 500px;
+			margin: auto;
+			padding: 10px;
+		}
+		table {
+			border-collapse: collapse;
+			border-style: solid;
+			
+		}
+		table th {
+			border-style: solid;
+		}
+		th, td {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		table td {
+		}
+		table tr:nth-child(1) {
+			background-color: green;
+		}
+		table tr:nth-child(2n+3) {
+			background-color: black;
+			color: white;
+			border-right-style: double;
+		}
+	</style>
+</head>
+
+<body>
+    <h1>AJAX and JSON API</h1>
+	<h3> Using AJAX to connect to earthquake.usg.gov and get JSON data </h3>
+	<p> Display only earthquake with magnituge > 4.0 </p>
+    <ul id="langages">
+    </ul>
+    <script src="ajax-json-api.js"></script>
+    <div id="result"></div>
+</body>
+
+</html>
